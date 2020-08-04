@@ -1,0 +1,212 @@
+@import url('../css/fonts.css');
+
+
+html, body{
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+:root{
+  /* -- gradient colors -- */
+  --sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  --blueish: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+}
+
+/* ------ Global ------ */
+
+h1{
+  font-family: Medium Condensed;
+  font-size: 2.5rem;
+}
+
+h3{
+  font-family: Bold Italic;
+  font-size: 1.5rem;
+}
+
+.btn{
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-family: Medium Condensed;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}
+
+ul{
+  list-style-type: none;
+}
+
+/* ------ nav ------ */
+.nav{
+  background: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}
+
+.toggle{
+  position: absolute;
+  top: 0;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.toggle-icons{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.toggle-icons i{
+  font-size: 1.4rem;
+}
+
+.collapse{
+  height: 30rem;
+}
+
+.nav-menu{
+  justify-content: space-between;
+}
+
+.nav-items{
+  display: flex;
+  margin: 0;
+}
+
+.nav-link{
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-family: Medium Condensed; 
+}
+
+.nav-link:hover{
+    background-color: midnightblue;
+}
+
+.nav-link:hover a{
+  color: white;
+}
+
+.nav-brand a{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: Bold;
+}
+
+.social{
+  padding: 1.4rem 0;
+}
+
+.social i{
+  padding: 0 0.2rem
+}
+
+.social i:hover{
+  color: black;
+}
+
+/* ------ main content ------ */
+
+/* -- site title -- */
+.site-title{
+  background: url('../images/background.png');
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.site-background{
+  padding-top: 10rem;
+  text-align: center;
+  color: white
+}
+
+h1, h3{
+  margin:0.3rem
+}
+
+.exp_btn{
+  margin: 1.8rem;
+  background: var(--sunset);
+}
+
+.btn:hover{
+  background: transparent;
+  border: 1px solid white;
+}
+
+/* -- CAROUSEL - main page -- */
+.blog
+{
+  background: url('../images/wall.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+}
+
+.blog-post
+{
+  padding-top: 6rem
+}
+
+.blog-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+
+.blog-title
+{
+  padding: 1rem 0;
+}
+
+.btn-blog
+{
+  padding: 0.7rem 2rem;
+  background: var(--blueish);
+  margin: 0.5rem;
+}
+
+span
+{
+  display: block;
+}
+
+/* -- RESIZE -- media makes website responsive -- */
+
+@media only screen and (max-width: 750px){
+
+  .nav-menu, .nav-items{
+      flex-direction: column;
+  }
+
+  .toggle{
+    display: initial;
+  }
+}
