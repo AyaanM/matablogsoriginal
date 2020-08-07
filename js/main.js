@@ -1,5 +1,4 @@
 // toggle
-
 $(document).ready(function(){
 
   $nav = $('.nav');
@@ -11,4 +10,13 @@ $(document).ready(function(){
 })
 
 // owl carousel
-$('.owl-carousel').owlCarousel();
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 4000,
+  dots: false,
+});
+
+
+
+

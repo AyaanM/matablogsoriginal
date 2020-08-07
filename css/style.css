@@ -126,6 +126,11 @@ ul{
   color: black;
 }
 
+.read:before
+{
+  content: 'READ';
+}
+
 /* ------ main content ------ */
 
 /* -- site title -- */
@@ -169,7 +174,7 @@ h1, h3{
 
 .blog-post
 {
-  padding-top: 6rem
+  padding-top: 4rem;
 }
 
 .blog-content{
@@ -196,6 +201,16 @@ h1, h3{
 span
 {
   display: block;
+}
+
+.container
+{
+  margin: 0 5vh;
+}
+
+.blog-content img{
+  height: 300px;
+  width: 60vh;
 }
 
 /* -- RESIZE -- media makes website responsive -- */
