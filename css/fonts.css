@@ -4,18 +4,8 @@
 }
 
 @font-face{
-  font-family: Bold Italic;
-  src: url('../futura/Futura Bold Italic font.ttf');
-}
-
-@font-face{
   font-family: Book;
   src: url('../futura/Futura Book font.ttf');
-}
-
-@font-face{
-  font-family: Book Italic;
-  src: url('../futura/Futura Book Italic font.ttf');
 }
 
 @font-face{
