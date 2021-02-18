@@ -1,40 +1,55 @@
-<!-- Jquery 3.5.1 JS file -->
-<script src="js/jquery.v3.5.1.js"></script>
-<!-- OWL CAROSEL JS file -->
-<script src="js/owl.carousel.min.js"></script>
+ <!-- Jquery 3.5.1 JS file -->
+    <script src="js/jquery.v3.5.1.js"></script>
 <!-- MAIN JS file -->
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
 <nav class='nav'>
   <div class="nav-menu flex-row">
-    <div class="nav-brand">
-      <a href="index.html">theTangible</a>
+    <div>
+      <a href='index.html'><h1 class='nav-logo-text'>theTangible</h1></a>
     </div>
     <div class="toggle">
       <div class="toggle-icons">
         <i class="fas fa-bars"></i>
       </div>
     </div>  
+    <br>
     <div>
       <ul class="nav-items">
           <li class="nav-link">
-              <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li class="nav-link">
-              <a href="popular.html">Popular</a>
+            <a href="pa/pop.html">Popular</a>
           </li>
           <li class="nav-link">
-              <a href="contact.html">Contact</a>
+            <a href="pa/abt.html">About</a>
           </li>
-          <li class="nav-link">
-              <a href="featured.html">Get Featured</a>
+          <li class='nav-link search'>
+            <i class="fas fa-search"></i>
+            <!-- drop down div -->
+            <div class='drop-down alignright'>
+              <!-- start of freefind search box html -->
+              <table cellpadding=-5 cellspacing=0 border=0>
+                <tr>
+                  <td>
+                    <form style="margin: 1rem; margin-top: -0.1rem;"action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                      <input type="hidden" name="si" value="78192530">
+                      <input type="hidden" name="pid" value="r">
+                      <input type="hidden" name="n" value="0">
+                      <input type="hidden" name="_charset_" value="">
+                      <input type="hidden" name="bcd" value="&#247;">
+                      <input type="text" name="query" size="15"> 
+                      <input type="submit" value="search">
+                    </form>
+                  </td>
+                </tr>
+              </table>
+              <!-- end of freefind search box html -->
+
+            </div>
           </li>
       </ul>
     </div>
-    <div class='social'>
-      <a href='#'><i class="fab fa-facebook-f"></i></a>
-      <a href='#'><i class="fab fa-instagram"></i></a>
-      <a href='#'><i class="far fa-envelope"></i></a>
-    </div>  
   </div>
 </nav>
