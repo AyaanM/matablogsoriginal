@@ -1,47 +1,18 @@
 @import url('../css/fonts.css');
 
-
 html, body{
   margin: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  scroll-behavior: smooth;
 }
 
-/* ----- temporary ----- */
-.s-img{
-  width: 48%;
-  overflow: hidden;
-  padding-left: 2.6rem;
-}
-
-.s-img:hover{
-  transform: scale(0.9);
-  transition: 1s;
-}
-
-/* ------ Global ------ */
+/* ---------------------------- GLOBAL ---------------------------------- */
 
 h1, h2{
   font-family: Medium Condensed;
   font-size: 2.5rem;
-}
-
-body{
-  background: linear-gradient(to right, #bdc3c7, #2c3e50);
-}
-
-.btn{
-  border: none;
-  border-radius: 2rem;
-  padding: 0.7rem 2rem;
-  font-size: 1rem;
-  font-family: Medium Condensed;
-  cursor: pointer;
-}
-
-a{
-  text-decoration: none;
-  color: rgb(76, 76, 76);
 }
 
 .flex-row{
@@ -56,40 +27,25 @@ ul{
 
 p{
   font-family: Book;
-  padding-left: 2.8rem;
 }
 
-/* ----------------- NAVIGATION ------------------ */
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.text-center{
+  text-align: center;
+}
+
+/* ---------------------------- NAVIGATION ------------------------------- */
 .nav{
   background: white;
-  padding: 0 2rem;
-  height: 0rem;
+  padding: 0 1rem;
+  height: 2rem;
   min-height: 10vh;
   overflow: hidden;
   transition: height 1s ease-in-out;
-}
-
-.toggle{
-  position: absolute;
-  top: 0;
-  width: 90%;
-  cursor: pointer;
-  display: none;
-}
-
-.toggle-icons{
-  display: flex;
-  justify-content: flex-end;
-  padding: 1.7rem 0;
-  padding-left: 2rem;
-}
-
-.toggle-icons i{
-  font-size: 1.4rem;
-}
-
-.collapse{
-  height: 24rem;
 }
 
 .nav-menu{
@@ -108,6 +64,11 @@ p{
   font-family: Medium Condensed; 
 }
 
+.nav a{
+  text-decoration: none;
+  color: rgb(76, 76, 76);
+}
+
 .nav-link:hover{
   background-color:	rgb(76, 76, 76);
   margin: 100;
@@ -122,14 +83,34 @@ p{
   margin: 0%;
 }
 
-.read:before{
-  content: 'READ';
+/* --- toggle button ---*/
+.toggle{
+  position: absolute;
+  top: 0;
+  width: 90%;
+  cursor: pointer;
+  display: none;
 }
 
-/* ---- search box style ---- */
+.toggle-icons{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.toggle-icons i{
+  font-size: 1.4rem;
+}
+
+.collapse{
+  height: 22rem;
+}
+
+/* --- search box --- */
 
 .drop-down{
   display: None;
+  float: right;
 }
 
 .search:hover{
@@ -141,11 +122,7 @@ p{
   padding-left: 1rem;
 }
 
-.alignright{
-  float: right;
-}
-
-/* -------------------- FOOTER -------------------- */
+/* ------------------------------ FOOTER ---------------------------------- */
 
 .footer{
   background: white;
@@ -153,26 +130,35 @@ p{
   position: relative;
 }
 
-.footer-logo{
-  width: 15rem;
-  padding: 2rem 3rem 0rem 3rem;
-}
-
-.subscribe{ 
-  clear: left; 
-  width: 100%;
-  font-family: Medium Condensed;
-  font-size: 1rem;
-}
-
 .footer-split{
   display: grid;
   grid-template-columns: 70% 25% 5%;
 }
 
+/*-- subscribe --*/
+.subscribe{ 
+  font-family: Medium Condensed;
+  font-size: 1rem;
+}
+
+/*-- text & social --*/
+
+.footer-right{
+  padding-top: 4rem;
+}
+
+.footer a{
+  text-decoration: none;
+  color: rgb(76, 76, 76);
+}
+
+.footer-text{
+  padding-left: 4.5rem;
+  margin-bottom: 0%;
+}
 
 .social{
-  padding-left: 5.5rem;
+  padding-left: 5rem;
   padding-top: 1rem;
   font-size: 1.5rem;
 }
@@ -192,16 +178,12 @@ p{
 }
 
 .move-up:hover{
-  color: grey;
+  color: black;
 }
 
-html{
-  scroll-behavior: smooth;
-}
+/* ----------------------------- LANDING PAGE ---------------------------- */
 
-/* ------------------- LANDING PAGE ------------------ */
-
-/*-- page with logo and aside blogs -- */
+/*-- page with logo and twitter post -- */
 .landing-page{
     display: grid;
     grid-template-columns: 70% 30%;
@@ -220,12 +202,6 @@ html{
   padding: 2rem;
 }
 
-.aside-blog img:hover{
-  transform: scale(0.9);
-  transition: 1s;
-}
-
-
 /* -- bottom part of landing page w blogs -- */
 .bottom-bar{
   display: flex;
@@ -233,13 +209,8 @@ html{
 
 .bottom-blog{
   padding: 2rem;
-  text-align: center;
   font-size: 1.2rem;
   font-family: Light Condensed;
-}
-
-.bottom-blog a{
-  color: black;
 }
 
 .bottom-blog img{
@@ -251,7 +222,7 @@ html{
   transition: 1s;
 }
 
-/* ----------------- SITE BLOGS --------------------- */
+/* ---------------------------- ACTUAL BLOGS ----------------------------- */
 
 .site-content{
   display: grid;
@@ -259,31 +230,14 @@ html{
 }
 
 .post-content{
-  width: 100%;
+  padding: 1rem 0rem;
 }
 
-.post-stuff{
-  padding: 1rem 2rem;
-  position: relative;
-}
-
-.post-title{
-  padding: 2rem 0rem 0rem 1.5rem;
-  position: relative;
-  font-size: 2.5rem;
-  font-family: Medium Condensed;
-}
-
-article{
-  padding: 0rem 0rem 0rem 2rem;
-  position: relative;
-}
-
-/* image at top of post */
+/* -- post image --*/
 .post-img{
   width: 80%;
   overflow: hidden;
-  padding-left: 2.6rem;
+  padding-left: 2.5rem;
 }
 
 .post-img:hover{
@@ -291,12 +245,19 @@ article{
   transition: 1s;
 }
 
-/* image in middle of post */
-div.item{
-    text-align: center;
+/* -- post title -- */
+.post-title{
+  padding-left: 2.5rem;
+  position: relative;
 }
 
-.blog-img{
+/* -- post text --*/
+article{
+  padding-left: 3.5rem;
+}
+
+/* image during post */
+.during-img{
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -304,9 +265,13 @@ div.item{
   border: 0.3rem solid black;
 }
 
-.blog-img:hover{
+.during-img:hover{
   transform: scale(0.9);
   transition: 1s;
+}
+
+.post-content a{
+  text-decoration: underline;
 }
 
 .caption {
@@ -318,7 +283,8 @@ div.item{
 /* ---- Comment Section -----*/
 
 .comment-container{
-  padding: .1rem 1.80rem
+  padding-left: 3rem;
+  width: 75%
 }
 
 /* ---- site blogs - sidebar ----*/
@@ -334,21 +300,20 @@ div.item{
   transition: 1s;
 }
 
-.side-content{
-  padding: 1rem 0rem;
+.post-stuff{
+  padding: 0.5rem;
+  position: relative;
 }
 
 .popular-post h2{
-  padding: 2rem 3rem 0rem 0rem;
+  padding: 2rem 0rem 0rem 1rem;
 }
 
 .side-title{
   font-size: 1.5rem;
-  text-align: center;
 }
 
-
-/*--------------------- POPULAR ---------------------*/
+/*------------------------------ POPULAR PAGE ------------------------------*/
 
 .site-split{
   display: grid;
@@ -417,7 +382,6 @@ div.item{
 /* ----------------- ABOUT PAGE -----------------*/
 .abt{
   padding-top: 2rem;
-  text-align: center;
 }
 
 .abt-logo{
@@ -443,7 +407,6 @@ div.m{
   padding-top: 2rem;
   font-size: 3rem;
   color: grey;
-  text-align: center;
   font-family: Bold;
 }
 
