@@ -7,6 +7,15 @@ $(document).ready(function(){
     $nav.toggleClass('collapse');
   })
 
+  // owl carousel initialization 
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    dots: false,
+    nav: true,
+    navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+    responsiveClass: true,
+  });
+
 });
 
 

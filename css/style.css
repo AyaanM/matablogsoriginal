@@ -187,7 +187,7 @@ a{
 .landing-page{
     display: grid;
     grid-template-columns: 70% 30%;
-    height: 140vh;
+    height: 90vh;
 }
 
 .site-logo{
@@ -202,24 +202,31 @@ a{
   padding: 2rem;
 }
 
-/* -- bottom part of landing page w blogs -- */
-.bottom-bar{
+/* -- carousel -- */
+.carousel-content{
   display: flex;
-}
-
-.bottom-blog{
-  padding: 2rem;
+  flex-direction: column;
+  width: 80%;
   font-size: 1.2rem;
   font-family: Light Condensed;
+  padding-left: 2.5rem
 }
 
-.bottom-blog img{
-  height: 10rem;
-}
-
-.bottom-blog img:hover{
+.carousel-content img:hover{
   transform: scale(0.9);
   transition: 1s;
+}
+
+.owl-nav-prev{
+  
+}
+
+.owl-nav-next{
+
+}
+
+.fas fa-chevron-left{
+  
 }
 
 /* ---------------------------- ACTUAL BLOGS ----------------------------- */
