@@ -217,18 +217,6 @@ a{
   transition: 1s;
 }
 
-.owl-nav-prev{
-  
-}
-
-.owl-nav-next{
-
-}
-
-.fas fa-chevron-left{
-  
-}
-
 /* ---------------------------- ACTUAL BLOGS ----------------------------- */
 
 .site-content{
@@ -245,6 +233,7 @@ a{
   width: 80%;
   overflow: hidden;
   padding-left: 2.5rem;
+  padding-top: 1rem;
 }
 
 .post-img:hover{
@@ -252,8 +241,21 @@ a{
   transition: 1s;
 }
 
+.img-caption {
+  font-size: 0.9rem;
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 25px;
+}
+
 /* -- post title -- */
 .post-title{
+  padding-left: 2.5rem;
+  position: relative;
+  margin-bottom: 0%
+}
+
+.author{
   padding-left: 2.5rem;
   position: relative;
 }
@@ -281,10 +283,17 @@ article{
   text-decoration: underline;
 }
 
-.caption {
+.caption{
   font-size: 0.9rem;
-  display: block;
   padding-top: 1rem;
+}
+
+/* ---- SOURCES -----*/
+
+.source{
+  padding-left: 3.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /* ---- Comment Section -----*/

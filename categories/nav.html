@@ -1,7 +1,12 @@
+<!-- Jquery 3.5.1 JS file -->
+    <script src="js/jquery.v3.5.1.js"></script>
+<!-- MAIN JS file -->
+    <script src="js/main.js"></script>
+
 <nav class='nav'>
   <div class="nav-menu flex-row">
     <div>
-      <a href='../../index.html'><img class='nav-logo' src='../../images/logo.png' alt='theTangible'></a>
+      <a href='../../index.html'><h1 class='nav-logo-text'>theTangible</h1></a>
     </div>
     <div class="toggle">
       <div class="toggle-icons">
@@ -11,24 +16,19 @@
     <br>
     <div>
       <ul class="nav-items">
-          <li class="nav-link">
-            <a href="../../index.html">Home</a>
-          </li>
-          <li class="nav-link">
-            <a href="../../pa/pop.html">Popular</a>
-          </li>
-          <li class="nav-link">
-            <a href="../../pa/abt.html">About</a>
-          </li>
+          <li class="nav-link"><a href="../../index.html">Home</a></li>
+          <li class="nav-link"><a href="../../pop.html">Popular</a></li>
+          <li class="nav-link"><a href="../../abt.html">About</a></li>
           <li class='nav-link search'>
+            <!-- image -->
             <i class="fas fa-search"></i>
             <!-- drop down div -->
             <div class='drop-down alignright'>
               <!-- start of freefind search box html -->
-              <table cellpadding=-5 cellspacing=0 border=0>
+              <table cellpadding=0>
                 <tr>
                   <td>
-                    <form style="margin: 1rem; margin-top: -0.1rem;"action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                    <form style="margin-left: 1rem; margin-top: -0.1rem;"action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
                       <input type="hidden" name="si" value="78192530">
                       <input type="hidden" name="pid" value="r">
                       <input type="hidden" name="n" value="0">
@@ -41,7 +41,6 @@
                 </tr>
               </table>
               <!-- end of freefind search box html -->
-
             </div>
           </li>
       </ul>
