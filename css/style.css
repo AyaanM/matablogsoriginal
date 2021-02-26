@@ -290,10 +290,25 @@ article{
 
 /* ---- SOURCES -----*/
 
+.tab{
+  height: 2rem;
+  margin-left: 3rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}  
+
 .source{
-  padding-left: 3.5rem;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.source-icons{
+  font-size: 1.5rem;
+} 
+
+.display{
+  height: 10rem;
 }
 
 /* ---- Comment Section -----*/
