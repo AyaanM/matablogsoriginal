@@ -4,8 +4,8 @@ $(document).ready(function(){
     $('.nav').toggleClass('collapse');
   });
 
-  $(".source").on("click", function(){
-    $('.tab').toggleClass('display');
+  $(".source-icon").on("click", function(){
+    $('.tab').toggleClass('source-display');
   });
 
   // owl carousel initialization 

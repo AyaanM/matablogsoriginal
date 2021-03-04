@@ -40,7 +40,7 @@ a{
 
 /* ---------------------- NAVIGATION ----------------------- */
 .nav{
-  background: linear-gradient(7deg,rgba(0, 0, 139, 0.945) 10%, rgba(0, 0, 0, 0.89) 40%);
+  background: linear-gradient(7deg,black 10%, rgba(0, 0, 0, 0.69) 40%);
   padding: 0 1rem;
   height: 2rem;
   min-height: 10vh;
@@ -70,12 +70,8 @@ a{
 }
 
 .nav-link:hover{
-  background-color:	rgba(0, 0, 139, 0.842);
+  background-color:	black;
   margin: 100;
-}
-
-.nav-link:hover a{
-  color: white;
 }
 
 .nav-logo-text{
@@ -118,10 +114,6 @@ a{
   color: gainsboro;
 }
 
-.search:hover{
-  color: white;
-}
-
 .search:hover .drop-down{
   display: block;
   padding-left: 1rem;
@@ -130,7 +122,7 @@ a{
 /* --------------------- FOOTER ---------------------- */
 
 .footer{
-  background: linear-gradient(to bottom left,rgba(0, 0, 139, 0.945) 10%, rgba(0, 0, 0, 0.89) 40%);
+  background: linear-gradient(to bottom left, black 10%, rgba(0, 0, 0, 0.69) 40%);
   height: 100%;
   position: relative;
 }
@@ -178,7 +170,7 @@ a{
 }
 
 .social i:hover{
-  color: rgba(0, 0, 139, 0.842);
+  color: black;
 }
 
 .move-up{
@@ -221,7 +213,6 @@ a{
 .carousel-content img:hover{
   transform: scale(0.9);
   transition: 1s;
-  border: 2px solid black;
   border-radius: 20px;
 }
 
@@ -238,15 +229,16 @@ a{
 
 /* -- post image --*/
 .post-img{
-  width: 80%;
+  width: 70%;
   overflow: hidden;
-  padding-left: 2.5rem;
-  padding-top: 1rem;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
 }
 
 .post-img:hover{
   transform: scale(0.9);
   transition: 1s;
+  border-radius: 20px;
 }
 
 .img-caption {
@@ -258,7 +250,7 @@ a{
 
 /* -- post title -- */
 .post-title{
-  padding-left: 2.5rem;
+  margin-left: 2.5rem;
   position: relative;
   margin-bottom: 0%
 }
@@ -270,7 +262,7 @@ a{
 
 /* -- post text --*/
 article{
-  padding-left: 3.5rem;
+  margin-left: 3.5rem;
   font-size: 1rem;
 }
 
@@ -301,7 +293,7 @@ article{
 
 .tab{
   height: 1rem;
-  margin-left: 3.5rem;
+  margin-left: 3rem;
   padding: 0.5rem;
   font-family: Medium Condensed;
   overflow: hidden;
@@ -312,12 +304,20 @@ article{
   margin-bottom: 0%
 }
 
-.source{
+.tab a{
+  text-decoration: underline;
+}
+
+.source-icon{
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-.display{
+.source-icon:hover{
+  color: RGB(15, 37, 74);
+}
+
+.source-display{
   height: 10rem;
 }
 
@@ -332,38 +332,41 @@ article{
 /* ---- Comment Section -----*/
 
 .comment-container{
-  margin-left: 3.5rem;
+  margin-left: 3rem;
   padding: 0.5rem;
   width: 75%
 }
 
 /* ---- site blogs - sidebar ----*/
 
-.side-img{
-  width: 80%;
-  overflow: hidden;
-  padding-left: 2.6rem;
+.side-bar h1{
+  text-align: center;
 }
 
-.side-img:hover{
+.side-info{
+  position: relative;
+  text-align: center;
+}
+
+.side-info img{
+  margin-top: 0.5rem;
+  width: 70%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.side-info img:hover{
   transform: scale(0.9);
   transition: 1s;
+  border-radius: 20px;
 }
 
-.post-stuff{
-  padding: 0.5rem;
-  position: relative;
-}
-
-.popular-post h2{
-  padding: 2rem 0rem 0rem 1rem;
-}
-
-.side-title{
+.side-info h1{
   font-size: 1.5rem;
+  margin-top: 5%;
 }
 
-/*------------------------------ POPULAR PAGE ------------------------------*/
+/*---------------------- POPULAR PAGE ----------------------*/
 
 .site-split{
   display: grid;
@@ -429,7 +432,7 @@ article{
   color: black;
 }
 
-/* ----------------- ABOUT PAGE -----------------*/
+/* ---------------------- ABOUT PAGE -----------------------*/
 .abt{
   padding-top: 2rem;
 }
@@ -452,7 +455,7 @@ div.m{
   padding-right: 2rem;
 }
 
-/* ----------------- CATEGORY PAGES --------------*/
+/* --------------------- CATEGORY PAGES ----------------------*/
 .top-title{
   padding-top: 2rem;
   font-size: 3rem;
@@ -486,188 +489,14 @@ div.m{
 
 /* -- RESIZE -- media makes website responsive -- */
 
-/* -- viewport 1440px or less -- */
-
-@media only screen and (max-width: 1440px){
-
-  .cat-img-2{
-    padding-left: 2rem;
-  }
-
-  .pop-img{
-    width: 140%
-  }
-
-  .pop-stuff{
-    padding: .5rem 3.5rem;
-    position: relative;
-  }
-
-  .blog{
-    height: 80vh;
-  }
-
-  .side-img{
-    padding-left: 2.1rem;
-  }
-}
-
-/* -- viewport 1240px or less -- */
-
-@media only screen and (max-width: 1024px){
-
-  .cat-img-2{
-    width: 110%;
-    padding-left: 0.8rem;
-  }
-
-  .nav-link{
-    padding: 1.4rem 1rem;
-    font-size: 1.1rem;
-  }
-
-  .nav-logo{
-  width: 7rem;
-  }
-
-  .blog{
-    height: 74vh;
-  }
-
-  .footer-logo{
-  width: 10rem;
-  padding: 4rem 3rem 0rem 3rem;
-  }
-
-  .side-info{
-    font-size: 0.7rem;
-  }
-
-  .social{
-    padding-left: 2.5rem;
-  }
-
-  .pop-img{
-    width: 100%;
-  }
-
-  .pop-stuff{
-    padding: .5rem .7rem;
-  }
-
-  .side-img{
-    padding: 1.5rem;
-  }
-
-  .blog-title{
-    font-size: 1rem;
-    padding-top: 0rem;
-  }
-
-}
-
-/* -- viewport less than 1130px or less -- */
-
-@media only screen and (max-width: 1130px){
-  .nav-logo{
-  width: 8rem;
-  }
-
-  .nav-link{
-  padding: 1.4rem 1rem;
-  }
-  
-  .blog{
-    height: 74vh;
-  }
-
-  .footer-logo{
-  width: 13rem;
-  padding: 2rem 2rem 0rem 2rem;
-  }
-
-  .social{
-    padding-left: 4rem;
-  }
-
-  .cat-h1{
-    font-size: 2.3rem;
-  }
-
-  .list-items{
-    width: 60%;
-  }
-
-  .site-split{
-    grid-template-columns: 28% 80%;
-  }
-
-  .pop-stuff{
-    padding: .5rem 2rem;
-  }
-
-  .pop-img{
-    width: 120%;
-  }
-
-  .post-title{
-    font-size: 1.5rem;
-  }
-
-  .popular-post h2{
-  padding: 2rem 3rem 0rem 0rem;
-  font-size: 2rem;
-  }
-
-  .side-img{
-    padding-left: 1.5rem;
-  }
-
-}
-
 /* -- viewport less than 750px or less -- */
 
 @media only screen and (max-width: 750px){
-
-  .nav-menu, .nav-items{
-      flex-direction: column;
+  .tweet-post{
+    display: none;
   }
 
   .toggle{
     display: initial;
   }
-
-  .blog{
-    height: 64vh;
-  }
-
-  .footer-logo{
-    width: 12rem;
-    padding: 3rem 3rem 0rem 0rem;
-  }
-
-  .social{
-  padding-left: 2rem;
-  font-size: 1.3rem;
-  }
-
-  .cat-h1{
-    font-size: 2rem;
-    padding-top: 0.5rem
-  }
-
-  .category-list{
-    padding-inline-start: 0.5rem;
-  }
-
-  .pop-img{
-    width: 110%;
-  }
-
-  .pop-stuff{
-    padding: .5rem 1.2rem;
-  }
-
-  #third-blog{
-    display: none;
-  }
+}
