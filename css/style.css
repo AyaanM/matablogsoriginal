@@ -368,55 +368,15 @@ article{
 
 /*---------------------- POPULAR PAGE ----------------------*/
 
-.site-split{
+.pop-split{
   display: grid;
   grid-template-columns: 30% 70%;
 }
 
-.pop-img{
-  width: 130%;
-  height: 120%;
-  overflow: hidden;
-}
-
-.pop-img:hover{
-  transform: scale(0.9);
-  transition: 1s;
-}
-
-.pop-title{
-  font-size: 1rem;
-  font-family: Medium;
-}
-
-.pop-stuff{
-  padding: .5rem 4rem;
-  position: relative;
-}
-
-.main-title{
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
-  font-family: Medium;
-}
-
-.main-title a{
-  color: black;
-}
-
-.more{
-  margin-left: 80%;
-}
-
 /*-- popular page -categories --*/
-
-.category-list{
+.categories{
   font-family: Light;
-}
-
-.cat-h1{
-  font-size: 2.5rem;
+  margin: .4rem 1rem;
 }
 
 .list-items{
@@ -428,9 +388,42 @@ article{
   display: flex;
 }
 
-.list-items a{
-  color: black;
+.categories ul{
+  padding-left: 1.5rem;
 }
+
+/*-- popular page - blogs --*/
+.pop-title{
+  margin-bottom: 0rem;
+}
+
+.pop-info{
+  position: relative;
+  text-align: center;
+  margin: 2rem;
+  margin-bottom: 0rem;
+}
+
+.pop-info img{
+  width: 120%;
+  overflow: hidden;
+}
+
+.pop-info img:hover{
+  transform: scale(0.9);
+  transition: 1s;
+  border-radius: 20px;
+}
+
+.pop-info h1{
+  font-size: 1.5rem;
+  margin-top: 5%;
+}
+
+.more{
+  margin-left: 80%;
+}
+
 
 /* ---------------------- ABOUT PAGE -----------------------*/
 .abt{
