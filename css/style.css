@@ -55,6 +55,7 @@ a{
 .nav-items{
   display: flex;
   margin: 0;
+  padding-left: 1rem;
 }
 
 .nav-link{
@@ -100,7 +101,7 @@ a{
 }
 
 .collapse{
-  height: 22rem;
+  height: 24rem;
 }
 
 /* --- search box --- */
@@ -487,6 +488,10 @@ div.m{
 @media only screen and (max-width: 750px){
   .tweet-post{
     display: none;
+  }
+
+  .nav-menu, .nav-items{
+    flex-direction: column;
   }
 
   .toggle{
