@@ -4,7 +4,7 @@ html, body{
   margin: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
-  background: linear-gradient(to bottom right, gainsboro, #544848);
+  background: white;
   scroll-behavior: smooth;
 }
 
@@ -38,9 +38,18 @@ a{
   text-align: center;
 }
 
+.hr-half{
+  width: 50%;
+}
+
+img:hover{
+  transform: scale(0.9);
+  transition: 1s;
+  border-radius: 20px;
+}
+
 /* ---------------------- NAVIGATION ----------------------- */
 .nav{
-  background: linear-gradient(7deg,black 10%, rgba(0, 0, 0, 0.69) 40%);
   padding: 0 1rem;
   height: 2rem;
   min-height: 10vh;
@@ -67,17 +76,26 @@ a{
 
 .nav a{
   text-decoration: none;
-  color: gainsboro
+  color: black;
 }
 
 .nav-link:hover{
-  background-color:	black;
+  background-color:	gainsboro;
   margin: 100;
 }
 
-.nav-logo-text{
-  padding: 0.7rem;
+.nav-logo{
+  padding: 0.2rem; 
+}
+
+.nav-logo img{
+  width: 4rem;
+}
+.nav-logo h1{
   margin: 0%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.5rem
 }
 
 /* --- toggle button ---*/
@@ -93,7 +111,7 @@ a{
   display: flex;
   justify-content: flex-end;
   padding: 1.7rem 0;
-  color: gainsboro;
+  color: black;
 }
 
 .toggle-icons i{
@@ -112,7 +130,7 @@ a{
 }
 
 .search{
-  color: gainsboro;
+  color: black;
 }
 
 .search:hover .drop-down{
@@ -189,16 +207,14 @@ a{
     height: 90vh;
 }
 
-.site-logo{
-  padding: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30rem;
-  height: 30rem;
+.featured-blog{
+  font-size: 1.2rem;
+  font-family: Light Condensed;
+  margin: 1rem 4rem; 
 }
 
 .tweet-post{
-  padding: 2rem;
+  margin: 1rem 3rem;
 }
 
 /* -- carousel -- */
@@ -209,12 +225,6 @@ a{
   font-size: 1.2rem;
   font-family: Light Condensed;
   padding-left: 2.5rem;
-}
-
-.carousel-content img:hover{
-  transform: scale(0.9);
-  transition: 1s;
-  border-radius: 20px;
 }
 
 /* ------------------ ACTUAL BLOGS -------------------- */
@@ -234,12 +244,6 @@ a{
   overflow: hidden;
   margin-left: 2.5rem;
   margin-top: 1rem;
-}
-
-.post-img:hover{
-  transform: scale(0.9);
-  transition: 1s;
-  border-radius: 20px;
 }
 
 .img-caption {
@@ -265,6 +269,7 @@ a{
 article{
   margin-left: 3.5rem;
   font-size: 1rem;
+  color: #2b2b2b
 }
 
 /* image during post */
@@ -274,11 +279,6 @@ article{
   margin-right: auto;
   display: block;
   border: 0.3rem solid black;
-}
-
-.during-img:hover{
-  transform: scale(0.9);
-  transition: 1s;
 }
 
 .post-content a{
@@ -339,7 +339,6 @@ article{
 }
 
 /* ---- site blogs - sidebar ----*/
-
 .side-bar h1{
   text-align: center;
 }
@@ -356,19 +355,12 @@ article{
   text-align: center;
 }
 
-.side-info img:hover{
-  transform: scale(0.9);
-  transition: 1s;
-  border-radius: 20px;
-}
-
 .side-info h1{
   font-size: 1.5rem;
   margin-top: 5%;
 }
 
 /*---------------------- POPULAR PAGE ----------------------*/
-
 .pop-split{
   display: grid;
   grid-template-columns: 30% 70%;
@@ -410,12 +402,6 @@ article{
   overflow: hidden;
 }
 
-.pop-info img:hover{
-  transform: scale(0.9);
-  transition: 1s;
-  border-radius: 20px;
-}
-
 .pop-info h1{
   font-size: 1.5rem;
   margin-top: 5%;
@@ -425,6 +411,29 @@ article{
   margin-left: 80%;
 }
 
+/* ---------------- SPECIFIC CATEGORY PAGES ------------------*/
+.top-title{
+  padding-top: 1rem;
+  color: gainsboro;
+}
+
+/*-- popular page - blogs --*/
+.cat-info{
+  position: relative;
+  text-align: center;
+  margin: 2rem;
+  margin-bottom: 0rem;
+}
+
+.cat-info img{
+  width: 120%;
+  overflow: hidden;
+}
+
+.cat-info h1{
+  font-size: 1.5rem;
+  margin-top: 5%;
+}
 
 /* ---------------------- ABOUT PAGE -----------------------*/
 .abt{
@@ -448,47 +457,11 @@ div.m{
   text-align: right;
   padding-right: 2rem;
 }
-
-/* --------------------- CATEGORY PAGES ----------------------*/
-.top-title{
-  padding-top: 2rem;
-  font-size: 3rem;
-  color: grey;
-  font-family: Bold;
-}
-
-.half{
-  width: 50%;
-}
-
-.cat-img-2{
-  width: 100%;
-  overflow: hidden;
-  padding-top: 2rem;
-  padding-left: 3rem;
-}
-
-.cat-img-2:hover{
-  transform: scale(0.9);
-  transition: 1s;
-}
-
-.cat-title-2{
-  padding-bottom: 1rem;
-  font-size: 1rem;
-  font-family: Medium;
-  margin-left: 25%;
-  color: black;
-}
-
 /* -- RESIZE -- media makes website responsive -- */
 
 /* -- viewport less than 750px or less -- */
 
 @media only screen and (max-width: 750px){
-  .tweet-post{
-    display: none;
-  }
 
   .nav-menu, .nav-items{
     flex-direction: column;
